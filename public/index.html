@@ -1,0 +1,86 @@
+<html>
+<head>
+  <title>estoq</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div style="background-color: #222a53d3; height: 100vh; width: 100vw; position: fixed; display: none; justify-content: center; align-items: center;" id="carregando">
+    <button style="border: none; background-color: #ffffff; color: #000000;">carregando...</button>
+  </div>
+  <div style="background-color: #222a53d3; height: 100vh; width: 100vw; position: fixed; display: none; justify-content: center; align-items: center;" id="alert">
+    <div style="background-color: #ffffff; border-radius: 50px; width: 90vw; padding: 20px;">
+      <h3 style="margin: 50px;" id="textAlert">teste</h3>
+      <button style="background-color: #ffffff; color: #000000;" onclick="btnAlert()">ok</button>
+    </div>
+  </div>
+  <div class="divTop">
+    <h1 class="logo">estoq</h1>
+  </div>
+  <!--
+      <div style="display: flex; justify-content: center;">
+        <input style="margin-top: 50px;" type="text" placeholder="senha">
+      </div>
+      <div style="display: flex; justify-content: center;">
+        <button style="margin-top: 80px;">entrar</button>
+      </div>
+  -->
+  <div class="divCenter">
+
+
+    <div style="display: block;" id="tela-entrar">
+      <div style="display: flex; justify-content: center;">
+        <input style="margin-top: 50px;" type="text" placeholder="nome" id="(input)entrar-nome">
+      </div>
+      <div style="display: flex; justify-content: center;">
+        <input style="margin-top: 50px;" type="password" placeholder="senha" id="(input)entrar-senha">
+      </div>
+      <div style="display: flex; justify-content: center;">
+        <button style="margin-top: 100px; background-color: #ffffff; color: #000000;" onclick="servidor_entrar()">entrar</button>
+      </div>
+    </div>
+
+
+    <div style="display: none;" id="tela-menu">
+      <div style="display: flex; justify-content: center;">
+        <button style="background-color: #ffffff; color: #000000;">coletar</button>
+      </div>
+      <div style="display: flex; justify-content: center;">
+        <button style="margin-top: 50px; background-color: #ffffff; color: #000000;">adicionar</button>
+      </div>
+      <div style="display: flex; justify-content: center;">
+      </div>
+      <div style="width: 100vw; margin-top: 80px;" id="tabela">
+        <div style="display: flex; justify-content: center;">
+          <div style="background-color: #e9e9e9; width: 90vw; height: 100px;">
+
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+          <div style="background-color: #f1f1f1; width: 90vw; height: 100px;">
+
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+          <div style="background-color: #e9e9e9; width: 90vw; height: 100px;">
+
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center;">
+          <div style="background-color: #f1f1f1; width: 90vw; height: 100px;">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/carregamento.js"></script>
+  <script src="js/alert.js"></script>
+  <script src="js/servidor.js"></script>
+
+</body>
+</html>
