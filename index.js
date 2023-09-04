@@ -10,7 +10,7 @@ var servidor = {}
 servidor.user = 'abc'
 servidor.senha = 'abc'  
 
-app.use(express.static('public/'));
+app.use(express.static('public/teste/'));
 
 var servidor = {}
 io.on('connection', (socket) => {
