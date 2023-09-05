@@ -27,7 +27,6 @@
   -->
   <div class="divCenter">
 
-
     <div style="display: block;" id="tela-entrar">
       <div style="display: flex; justify-content: center;">
         <input style="margin-top: 50px;" type="text" placeholder="nome" id="(input)entrar-nome">
@@ -41,32 +40,38 @@
       </div>
     </div>
 
-
     <div style="display: none;" id="tela-menu">
       <div style="display: flex; justify-content: center;">
-        <button style="background-color: #ffffff; color: #000000;">coletar</button>
+        <button style="background-color: #ffffff; color: #000000;" onclick="tela('coletar')">editar</button>
       </div>
       <div style="display: flex; justify-content: center;">
         <button style="margin-top: 50px; background-color: #ffffff; color: #000000;" onclick="tela('add')">adicionar</button>
       </div>
       <div style="display: flex; justify-content: center;">
       </div>
-      <div style="width: 100vw; margin-top: 80px; display: flex; justify-content: center; align-items: center;">
+      <div style="width: 100vw; margin-top: 80px; display: flex; justify-content: center; align-items: center;" id="noneDiv">
         <div id="tabela">
         </div>
       </div>
     </div>
-
 
     <div style="display: none;" id="tela-add">
       <div style="display: flex; justify-content: center;">
         <input style="margin-top: 50px;" type="text" placeholder="nome" id="(input)add-nome">
       </div>
       <div style="display: flex; justify-content: center;">
-        <button style="margin-top: 100px; background-color: #ffffff; color: #000000;" onclick="servidor_add()">entrar</button>
+        <button style="margin-top: 100px; background-color: #ffffff; color: #000000;" onclick="servidor_add()">adicionar</button>
       </div>
     </div>
 
+    <div style="display: none;" id="tela-coletar">
+      <div style="display: flex; justify-content: center;">
+        <input style="margin-top: 50px;" type="text" placeholder="quantidade" id="(input)add-coletar">
+      </div>
+      <div style="display: flex; justify-content: center;">
+        <button style="margin-top: 100px; background-color: #ffffff; color: #000000;" onclick="servidor_coletar()">editar</button>
+      </div>
+    </div>
 
   </div>
 
